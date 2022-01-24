@@ -1,7 +1,6 @@
 import React from 'react'
 
-import Container from './container'
-import * as styles from './footer.module.css'
+import * as stylesheet from './footer.module.css'
 
 const Footer = () => (
   <footer className="footer">
@@ -9,11 +8,11 @@ const Footer = () => (
             <div>
               © {new Date().getFullYear()}, Built with
               {` `}
-              <a href="https://www.gatsbyjs.org" target="_blank">
+              <a href="https://www.gatsbyjs.org" target="_blank" rel="noreferrer">
                 Gatsby
               </a>{' '}
               by{' '}
-              <a href="https://www.aylinmarie.co" target="_blank">
+              <a href="https://www.aylinmarie.co" target="_blank" rel="noreferrer">
                 Aylin Marie
               </a>
             </div>
