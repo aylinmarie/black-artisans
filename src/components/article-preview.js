@@ -1,15 +1,15 @@
 import React from 'react'
-import { Link } from 'gatsby'
 import { GatsbyImage } from 'gatsby-plugin-image'
 
 import Container from './container'
-import Tags from './tags'
 import * as styles from './article-preview.module.css'
 
 const ArticlePreview = ({ posts }) => {
   if (!posts) return null
-  if (!Array.isArray(posts)) return null
-
+  if (!Array.isArray(posts)) {
+    posts =  [posts]
+  } 
+ 
   return (
     <Container>
       <ul className={styles.articleList}>
@@ -17,7 +17,7 @@ const ArticlePreview = ({ posts }) => {
           return (
             <li key={post.name}>
               
-                <GatsbyImage alt="" image={post.image.gatsbyImageData} />
+                <GatsbyImage alt={post.image.title} image={post.image.gatsbyImageData} />
                 <h2 className={styles.title}>{post.name}</h2>
            
                 <div>{post.description.description}</div>

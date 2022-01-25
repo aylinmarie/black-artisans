@@ -1,6 +1,5 @@
 import PropTypes from 'prop-types';
 import React from 'react';
-import { Link } from 'gatsby';
 import Navigation from './navigation'
 
 import * as stylesheet from './header.module.css';

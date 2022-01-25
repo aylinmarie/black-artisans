@@ -3,8 +3,8 @@ import React from 'react'
 import * as stylesheet from './footer.module.css'
 
 const Footer = () => (
-  <footer className="footer">
-          <div className="footerWrapper">
+  <footer className={stylesheet.root}>
+          <div className={stylesheet.wrapper}>
             <div>
               © {new Date().getFullYear()}, Built with
               {` `}
@@ -17,7 +17,7 @@ const Footer = () => (
               </a>
             </div>
             {/* <Button type="tertiary" onClick={()=>setDarkMode(!isDarkMode)}>{isDarkMode ? 'Light' : 'Dark'} Mode</Button> */}
-            <nav className="footerNav">
+            <nav className={stylesheet.nav}>
               {/* <a href="/privacy">Privacy Policy</a>
               <a href="/accessibility">Accessibility</a> */}
             </nav>

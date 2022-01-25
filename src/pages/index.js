@@ -53,15 +53,7 @@ class RootIndex extends React.Component {
           </Col>
           <Col sm="12" lg="9">
             <section>
-              {/* <Card
-                style={{ maxWidth: '100%' }}
-                key={data[0].name}
-                name={data[0].name}
-                href={data[0].href}
-                description={data[0].description}
-                src={data[0].src}
-                alt={data[0].alt}
-              /> */}
+            <ArticlePreview posts={posts[0]} />
             </section>
           </Col>
         </Row>
@@ -78,30 +70,10 @@ class RootIndex extends React.Component {
           </Col> */}
           <Col sm="12" lg="12">
             <section>
-              {/* <ResponsiveMasonry
-                columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}
-              >
-                <Masonry gutter="60px">
-                  {data.slice(1).map((artisan, index) => {
-                    return (
-                      <Card
-                        key={artisan.name}
-                        name={artisan.name}
-                        href={artisan.href}
-                        description={artisan.description}
-                        src={artisan.src}
-                        alt={artisan.alt}
-                      />
-                    );
-                  })}
-                </Masonry>
-              </ResponsiveMasonry> */}
-              <ArticlePreview posts={posts} />
+              <ArticlePreview posts={posts.slice(1)} />
             </section>
           </Col>
         </Row>
-
-        <ArticlePreview posts={posts} />
         </Container>
       </Layout>
     )
@@ -123,6 +95,7 @@ query IndexQuery {
       name
       image {
         gatsbyImageData
+        title
       }
       description {
         description

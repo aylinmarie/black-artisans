@@ -70,18 +70,7 @@
     padding: 0;
   }
 
-  .footer {
-    border-top: 1px solid var(--black);
-    padding: 24px;
-  }
-  .footerNav * + * {
-    margin-left: 16px;
-  }
-  .footerWrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
+ 
 
   /** Overrides */
   .custom-control-input:checked ~ .custom-control-label::before {
@@ -96,15 +85,3 @@
     margin-left: auto;
   }  
 
-/* :root [data-dark-theme = "true"] { 
-  background-color: var(--oatmeal);
-
-  filter: invert(100%);
-  * { 
-    background-color: inherit;
-  }
-
-
-  img:not([src*=".svg"]), video {  
-    filter: invert(100%);
-  } */
