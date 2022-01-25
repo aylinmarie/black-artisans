@@ -36,10 +36,10 @@ if (!spaceId || !accessToken) {
 
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Contentful Starter',
-    description: 'Official Contentful Gatsby Starter',
+    title: 'Black Artisans',
+    description:
+      'A collective space for handcrafted products made by black creators.',
   },
-  pathPrefix: '/gatsby-contentful-starter',
   plugins: [
     'gatsby-transformer-remark',
     'gatsby-transformer-sharp',
