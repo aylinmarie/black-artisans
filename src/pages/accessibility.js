@@ -1,7 +1,6 @@
 import React from 'react';
 
-import Layout from '../components/layout';
-import Seo from '../components/seo';
+import { Layout, Seo, ExternalLink } from '@components';
 
 const AccessibilityPage = () => {
   return (
@@ -15,13 +14,9 @@ const AccessibilityPage = () => {
           the widest possible audience, regardless of technology or ability. I
           am actively working to increase the accessibility and usability of
           this website and in doing so adhere to{' '}
-          <a
-            href="https://www.w3.org/TR/WCAG21/"
-            target="_blank"
-            rel="noreferrer"
-          >
+          <ExternalLink href="https://www.w3.org/TR/WCAG21/">
             Level AA WCAG 2.1
-          </a>{' '}
+          </ExternalLink>{' '}
           standards. These guidelines explain how to make web content more
           accessible for people with disabilities. Conformance with these
           guidelines will help make the web more user friendly for all people.
@@ -33,9 +28,9 @@ const AccessibilityPage = () => {
         </p>
         <p>
           If you experience any issues with accessibility,{' '}
-          <a href="mailto:hello@aylinmarie.co" target="_blank" rel="noreferrer">
+          <ExternalLink href="mailto:hello@aylinmarie.co">
             please contact me
-          </a>
+          </ExternalLink>
           .
         </p>
       </section>

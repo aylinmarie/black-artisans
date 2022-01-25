@@ -5,6 +5,10 @@
   list-style-type: none;
 }
 
+.listItem {
+  padding-bottom: var(--space-3xl);
+}
+
 .link {
   text-transform: uppercase;
 }

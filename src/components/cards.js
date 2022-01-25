@@ -3,6 +3,8 @@ import { GatsbyImage } from 'gatsby-plugin-image';
 
 import { Col, Row } from 'shards-react';
 
+import ExternalLink from '../components/externalLink';
+
 import * as stylesheet from './cards.module.css';
 
 const Card = ({ post }) => {
@@ -15,14 +17,12 @@ const Card = ({ post }) => {
       />
       <h3>{post.name}</h3>
       <p>{post.description.description}</p>
-      <a
-        href={post.href}
+      <ExternalLink
+        href={post.href.href}
         className={`caption ${stylesheet.link}`}
-        target="_blank"
-        rel="noreferrer"
       >
         Shop {post.name}
-      </a>
+      </ExternalLink>
     </>
   );
 };
@@ -37,7 +37,13 @@ const Cards = ({ posts }) => {
     <Row tag="ul" className={stylesheet.list}>
       {posts.map((post) => {
         return (
-          <Col tag="li" sm="12" lg="4" key={post.name}>
+          <Col
+            tag="li"
+            sm="12"
+            lg="4"
+            key={post.name}
+            className={stylesheet.listItem}
+          >
             <Card post={post} />
           </Col>
         );

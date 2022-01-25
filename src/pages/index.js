@@ -2,10 +2,7 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import get from 'lodash/get';
 
-import Layout from '../components/layout';
-import Button from '../components/button';
-import Block from '../components/block';
-import { Cards, Card } from '../components/cards';
+import { Layout, Button, Block, Cards, Card } from '@components';
 
 import { Container, Row, Col } from 'shards-react';
 import 'bootstrap/dist/css/bootstrap.min.css';
