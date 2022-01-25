@@ -1,0 +1,14 @@
+.root {
+  border-top: 1px solid var(--black);
+  padding: 24px;
+}
+
+.nav * + * {
+  margin-left: 16px;
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
