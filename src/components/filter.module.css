@@ -3,8 +3,8 @@
 .root {
   list-style: none;
   padding-left: 16px;
+}
 
-  li {
-    margin-bottom: 16px;
-  }
+.root li {
+  margin-bottom: 16px;
 }

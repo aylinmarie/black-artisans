@@ -5,7 +5,7 @@
   display: inline-flex;
   line-height: 4;
   border: 1px solid var(--black);
-  font-family: @typeface-sanserif;
+  font-family: var(--typeface-sanserif);
   text-transform: uppercase;
   font-size: 14px;
   font-weight: 400;
@@ -15,34 +15,35 @@
     border-color 0.2s ease;
 
   background-color: var(--black);
-  color: @oatmeal;
+  color: var(--oatmeal);
+}
 
-  /* &:focus {
-    outline: var(--clay) auto 2px;
-    outline-offset: 3px;
-  }
-  &:hover {
-    text-decoration: none;
-  } */
+.root:focus {
+  outline: var(--clay) auto 2px;
+  outline-offset: 3px;
+}
+
+.root:hover {
+  text-decoration: none;
 }
 
 .secondary {
-  background-color: @stone;
-  border-color: @stone;
-
-  /* &:hover {
-    background-color: fade(@stone, 90);
-  } */
+  background-color: var(--stone);
+  border-color: var(--stone);
 }
+
+.secondary:hover {
+  background-color: fade(var(--stone), 90);
+} 
 
 .tertiary {
   background-color: transparent;
   border-color: var(--clay);
   color: var(--clay);
-
-  /* &:hover {
-    background-color: var(--clay);
-    border-color: @oatmeal;
-    color: @oatmeal;
-  } */
 }
+
+.tertiary:hover {
+  background-color: var(--clay);
+  border-color: var(--oatmeal);
+  color: var(--oatmeal);
+} 

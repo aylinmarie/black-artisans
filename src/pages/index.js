@@ -5,7 +5,7 @@ import get from 'lodash/get';
 import Layout from '../components/layout';
 import Button from '../components/button';
 import Block from '../components/block';
-import ArticlePreview from '../components/article-preview';
+import { Cards, Card } from '../components/cards';
 
 import { Container, Row, Col } from 'shards-react';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -53,29 +53,20 @@ class RootIndex extends React.Component {
               </Block>
             </Col>
             <Col sm="12" lg="9">
+              {/* Single creator view */}
               <section>
-                <ArticlePreview posts={posts[0]} />
+                <Card post={posts[0]} />
               </section>
             </Col>
           </Row>
         </Container>
 
-        {/* Listing */}
-        <Container>
-          <Row>
-            {/* <Col sm="12" lg="3">
-            <aside>
-              <h3>Collections</h3>
-              <Filter />
-            </aside>
-          </Col> */}
-            <Col sm="12" lg="12">
-              <section>
-                <ArticlePreview posts={posts.slice(1)} />
-              </section>
-            </Col>
-          </Row>
-        </Container>
+        {/* List of creators */}
+        <section>
+          <Container>
+            <Cards posts={posts.slice(1)} />
+          </Container>
+        </section>
       </Layout>
     );
   }

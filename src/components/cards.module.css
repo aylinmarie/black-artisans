@@ -1,0 +1,27 @@
+@import '../styles/variables.css';
+
+.list {
+  padding: 0;
+  list-style-type: none;
+}
+
+.link {
+  text-transform: uppercase;
+}
+
+.link::after {
+  padding-left: 20px;
+  content: url('../assets/images/arrow.svg');
+}
+
+.photoLink {
+  transition: opacity 0.3s ease;
+}
+
+.photoLink:hover {
+  opacity: 0.9;
+}
+
+.img {
+  margin-bottom: var(--space-lg);
+}

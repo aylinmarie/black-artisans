@@ -11,6 +11,11 @@
     color: var(--black);
   }
 
+  :focus {
+    outline: var(--clay) auto 2px;
+    outline-offset: 1px;
+  }
+
   img {
     max-width: 100%;
     width: 100%;
@@ -22,17 +27,6 @@
   }
 
   /** Typography */
-  h1,
-  h2,
-  h3 {
-    font-family: var(--typeface-brand);
-    font-weight: 300;
-    /* a,
-    a:hover {
-      text-decoration: none;
-    } */
-  }
-
   a {
     color: var(--clay);
     text-decoration: underline;
@@ -41,6 +35,22 @@
 
   a:hover {
     color: var(--stone);
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: var(--typeface-brand);
+    font-weight: 300;
+  }
+
+  h1 a,
+  h2 a,
+  h3 a,
+  h1 a:hover,
+  h2 a:hover,
+  h3 a:hover {
+    text-decoration: none;
   }
 
   p {
