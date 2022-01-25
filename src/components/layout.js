@@ -1,7 +1,6 @@
 import React from 'react'
 
 import Seo from './seo'
-import Navigation from './navigation'
 import Footer from './footer'
 import Header from './header'
 
@@ -13,7 +12,6 @@ class Template extends React.Component {
       <>
         <Seo />
         <Header/>
-        <Navigation />
         <main>{children}</main>
         <Footer />
       </>

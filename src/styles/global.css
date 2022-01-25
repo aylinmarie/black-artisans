@@ -34,7 +34,7 @@
   }
 
   a {
-    color: @clay;
+    color: var(--clay);
     text-decoration: underline;
     transition: color 0.3s ease;
   }

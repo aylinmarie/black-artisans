@@ -2,13 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600&display=swap');
 
 :root {
-    --black: #161513;
-    --stone: #69625a;
-    --oatmeal: #f8f7f7;
-    --clay: #9e6348;
-    --typeface-base: 'Bellefair', serif;
-    --typeface-brand: 'Cormorant Garamond', serif;
-    --typeface-sanserif: 'Poppins', sans-serif;
+  /* Global */
+  --black: #161513;
+  --stone: #69625a;
+  --oatmeal: #f8f7f7;
+  --clay: #9e6348;
 
     /* spacing */
   --space-sm: 4px;
@@ -18,17 +16,34 @@
   --space-2xl: 24px;
   --space-3xl: 48px;
 
-    /* font-weight */
-    --body: 400;
-    --medium: 500;
-    --semibold: 600;
-    --bold: 700;
-    --extrabold: 800;
-    --heavy: 900;
-  
-    /* font-size */
-    --text-xs: 12px;
-    --text-sm: 14px;
-    --text-md: 16px;
+  /* typeface */
+  --typeface-base: 'Bellefair', serif;
+  --typeface-brand: 'Cormorant Garamond', serif;
+  --typeface-sanserif: 'Poppins', sans-serif;
+
+  /* font-weight */
+  --body: 400;
+  --medium: 500;
+  --semibold: 600;
+  --bold: 700;
+  --extrabold: 800;
+  --heavy: 900;
+
+  /* font-size */
+  --text-xs: 12px;
+  --text-sm: 14px;
+  --text-md: 16px;
 }
 
+/* :root [data-dark-theme = "true"] { 
+  background-color: var(--oatmeal);
+
+  filter: invert(100%);
+  * { 
+    background-color: inherit;
+  }
+
+
+  img:not([src*=".svg"]), video {  
+    filter: invert(100%);
+  } */

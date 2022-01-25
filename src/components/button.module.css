@@ -4,7 +4,7 @@
   padding: 0 24px;
   display: inline-flex;
   line-height: 4;
-  border: 1px solid @black;
+  border: 1px solid var(--black);
   font-family: @typeface-sanserif;
   text-transform: uppercase;
   font-size: 14px;
@@ -14,11 +14,11 @@
   transition: color 0.2s ease, background-color 0.2s ease,
     border-color 0.2s ease;
 
-  background-color: @black;
+  background-color: var(--black);
   color: @oatmeal;
 
   /* &:focus {
-    outline: @clay auto 2px;
+    outline: var(--clay) auto 2px;
     outline-offset: 3px;
   }
   &:hover {
@@ -37,11 +37,11 @@
 
 .tertiary {
   background-color: transparent;
-  border-color: @clay;
-  color: @clay;
+  border-color: var(--clay);
+  color: var(--clay);
 
   /* &:hover {
-    background-color: @clay;
+    background-color: var(--clay);
     border-color: @oatmeal;
     color: @oatmeal;
   } */
