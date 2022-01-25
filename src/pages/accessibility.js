@@ -15,7 +15,11 @@ const AccessibilityPage = () => {
           the widest possible audience, regardless of technology or ability. I
           am actively working to increase the accessibility and usability of
           this website and in doing so adhere to{' '}
-          <a href="https://www.w3.org/TR/WCAG21/" target="_blank" rel="noreferrer">
+          <a
+            href="https://www.w3.org/TR/WCAG21/"
+            target="_blank"
+            rel="noreferrer"
+          >
             Level AA WCAG 2.1
           </a>{' '}
           standards. These guidelines explain how to make web content more

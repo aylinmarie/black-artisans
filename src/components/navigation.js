@@ -1,7 +1,7 @@
-import React from 'react'
-import { Link } from 'gatsby'
+import React from 'react';
+import { Link } from 'gatsby';
 
-import * as styles from './navigation.module.css'
+import * as styles from './navigation.module.css';
 
 const Navigation = () => (
   <nav role="navigation" className={styles.container} aria-label="Main">
@@ -21,6 +21,6 @@ const Navigation = () => (
       </li>
     </ul> */}
   </nav>
-)
+);
 
-export default Navigation
+export default Navigation;
