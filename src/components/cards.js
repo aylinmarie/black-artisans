@@ -1,9 +1,9 @@
 import React from 'react';
 import { GatsbyImage } from 'gatsby-plugin-image';
 
-import { Col, Row } from 'shards-react';
-
-import ExternalLink from '../components/externalLink';
+import ExternalLink from './externalLink';
+import Masonry from './Masonry/Masonry';
+import ResponsiveMasonry from './Masonry/ResponsiveMasonry';
 
 import * as stylesheet from './cards.module.css';
 
@@ -34,21 +34,17 @@ const Cards = ({ posts }) => {
   }
 
   return (
-    <Row tag="ul" className={stylesheet.list}>
-      {posts.map((post) => {
-        return (
-          <Col
-            tag="li"
-            sm="12"
-            lg="4"
-            key={post.name}
-            className={stylesheet.listItem}
-          >
-            <Card post={post} />
-          </Col>
-        );
-      })}
-    </Row>
+    <ResponsiveMasonry columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}>
+      <Masonry gutter="60px" as="ul">
+        {posts.map((post) => {
+          return (
+            <li key={post.name} className={stylesheet.listItem}>
+              <Card post={post} />
+            </li>
+          );
+        })}
+      </Masonry>
+    </ResponsiveMasonry>
   );
 };
 

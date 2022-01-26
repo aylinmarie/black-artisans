@@ -60,9 +60,7 @@ class RootIndex extends React.Component {
 
         {/* List of creators */}
         <section>
-          <Container>
-            <Cards posts={posts.slice(1)} />
-          </Container>
+          <Cards posts={posts.slice(1)} />
         </section>
       </Layout>
     );
