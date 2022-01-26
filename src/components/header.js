@@ -1,13 +1,17 @@
 import PropTypes from 'prop-types';
 import React from 'react';
-import Navigation from './navigation';
+import { Link } from 'gatsby';
 
 import * as stylesheet from './header.module.css';
 
-const Header = ({ siteTitle }) => {
+const Header = () => {
   return (
     <header className={stylesheet.root}>
-      <Navigation />
+      <nav aria-label="Main">
+        <h1>
+          <Link to="/">Black Artisans</Link>
+        </h1>
+      </nav>
     </header>
   );
 };

@@ -2,12 +2,12 @@
 
   /** General */
   body {
-    max-width: 2000px;
+    max-width: 1800px;
     margin: auto;
     border: 1px solid;
     font-family: var(--typeface-base);
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 20px;
+    line-height: 1.2;
     color: var(--black);
   }
 
@@ -22,7 +22,7 @@
   }
 
   section {
-    padding: 6%;
+    padding: 10%;
     margin: auto;
   }
 
@@ -55,6 +55,7 @@
 
   p {
     margin-bottom: 16px;
+    max-width: 75ch;
   }
 
   .caption {

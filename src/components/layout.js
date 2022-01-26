@@ -6,13 +6,14 @@ import Header from './header';
 
 class Template extends React.Component {
   render() {
-    const { children } = this.props;
+    // Refactor styling
+    const { children, ...rest } = this.props;
 
     return (
       <>
         <Seo />
         <Header />
-        <main>{children}</main>
+        <main {...rest}>{children}</main>
         <Footer />
       </>
     );

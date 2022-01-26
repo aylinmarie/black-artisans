@@ -6,6 +6,7 @@
   "author": "Aylin Marie <hello@aylinmarie.co>",
   "dependencies": {
     "classnames": "^2.3.1",
+    "dompurify": "^2.3.5",
     "gatsby": "^4.0.0",
     "gatsby-plugin-image": "^2.0.0",
     "gatsby-plugin-less": "^4.7.0",
