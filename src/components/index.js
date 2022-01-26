@@ -6,6 +6,8 @@ import VisuallyHidden from './visuallyHidden';
 import Layout from './layout';
 import Navigation from './navigation';
 import Seo from './seo';
+import Masonry from './Masonry/Masonry';
+import ResponsiveMasonry from './Masonry/ResponsiveMasonry';
 
 export {
   Cards,
@@ -17,4 +19,6 @@ export {
   Seo,
   Layout,
   VisuallyHidden,
+  ResponsiveMasonry,
+  Masonry,
 };

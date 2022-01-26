@@ -6,7 +6,7 @@
 }
 
 .listItem {
-  padding-bottom: var(--space-3xl);
+  /* padding-bottom: var(--space-3xl); */
 }
 
 .link {
