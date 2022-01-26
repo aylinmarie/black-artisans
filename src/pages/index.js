@@ -27,25 +27,25 @@ class RootIndex extends React.Component {
                 <h2>blackartisans</h2>
                 <p className="caption">handmade work by black creators</p>
                 <p>
-                  Creating something by hand is so personal. Within our digital
-                  age, I’ve grown to appreciate the more tangible art. I created
-                  this project to collect and celebrate the talent that lives
-                  within the black community.
+                  Creating something by hand is so personal. Appreciation of
+                  tangible art and crafted products have matured in our digital
+                  age. This project was created to collect and celebrate the
+                  talent that lives within the black community.
                 </p>
               </Block>
               <Block className="borderRight" style={{ height: '100%' }}>
                 <h3>know someone?</h3>
                 <p>
-                  If you know of a black artisan to be featured here, let me
-                  know!
+                  If you know of a black creator you would like to see featured
+                  here, let us know!
                 </p>
                 <Button
                   type="tertiary"
-                  href="mailto:hello@aylinmarie.co"
+                  href="mailto:hello@blackartisans.co"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  Send me a note
+                  Send a note
                 </Button>
               </Block>
             </Col>
