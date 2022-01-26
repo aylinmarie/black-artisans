@@ -1,7 +1,6 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import get from 'lodash/get';
-import DOMPurify from 'dompurify';
 
 import { Seo, Layout } from '@components';
 class AccessibilityIndex extends React.Component {
@@ -17,7 +16,7 @@ class AccessibilityIndex extends React.Component {
         <Seo title={page.title} />
         <div
           dangerouslySetInnerHTML={{
-            __html: DOMPurify.sanitize(page.body?.childMarkdownRemark?.html),
+            __html: page.body?.childMarkdownRemark?.html,
           }}
         />
       </Layout>
