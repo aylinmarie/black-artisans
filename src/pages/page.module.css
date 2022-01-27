@@ -1,0 +1,11 @@
+@import '../styles/variables.css';
+
+.root {
+    margin: auto;
+    padding: 10%;
+    maxWidth: 1600px;
+}
+
+.meta {
+    margin-top: var(--space-3xl);
+}

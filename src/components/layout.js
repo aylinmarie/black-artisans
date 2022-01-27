@@ -6,7 +6,6 @@ import Header from './header';
 
 class Template extends React.Component {
   render() {
-    // Refactor styling
     const { children, ...rest } = this.props;
 
     return (

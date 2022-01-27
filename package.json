@@ -52,7 +52,7 @@
   "scripts": {
     "dev": "gatsby develop",
     "build": "gatsby build",
-    "start": "npm run develop",
+    "start": "npm run dev",
     "serve": "gatsby serve",
     "postinstall": "node ./bin/hello.js",
     "setup": "node ./bin/setup.js"

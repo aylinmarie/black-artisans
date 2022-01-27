@@ -3,8 +3,9 @@
   padding: 24px;
 }
 
-.nav * + * {
-  margin-left: 16px;
+.nav {
+  display: flex;
+  gap: var(--space-lg);
 }
 
 .wrapper {
