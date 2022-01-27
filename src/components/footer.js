@@ -30,7 +30,7 @@ const Footer = () => {
               </div>
               <nav aria-label="Footer" className={stylesheet.nav}>
                 {_DATA.map((page) => (
-                  <Link key={page.title} to={page.slug}>
+                  <Link key={page.title} to={`/${page.slug}`}>
                     {page.title}
                   </Link>
                 ))}
